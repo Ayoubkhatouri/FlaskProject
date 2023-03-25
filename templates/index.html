@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block head  %}
+<title>Network Administration Assignment</title>
+{% endblock%}
+
+{% block body %}
+<div class="content">
+    <div class="divhead">
+    <h1 class="head" >Network Administration Assignment</h1>
+</div>
+   
+    <a href="getMac?ip=192.168.181.132">  Get Mac Address</a>
+    <p>{{mac_address}}</p>
+<br>
+    <a href="/ram/192.168.181.132">  Get status ram</a>
+    <p>{{total_mem}}</p>
+    <p>{{used_mem}}</p>
+    <p>{{free_mem}}</p>
+
+<br>
+<a href="/temperature/192.168.181.132">  Get agent processor temperature </a>
+<p>{{temperature}}</p>
+
+</div>
+{% endblock %}

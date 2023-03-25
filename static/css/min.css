@@ -1,0 +1,21 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.divhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head { 
+    word-wrap: break-word;
+    white-space: nowrap;
+   
+  }
